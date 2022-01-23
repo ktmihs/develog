@@ -100,7 +100,8 @@
   align-items: center;
   position: relative;
   margin-bottom: rem(50px);
-  width: 90%;
+  // width: 90%;
+
   .textarea {
     display: inline-block;
     resize: none;
@@ -167,14 +168,14 @@
   display: flex;
   align-items: center;
   @media screen and (max-width: 700px) {
-    width: 90%;
+    // width: 90%;
     text-align: center;
   }
   @media screen and (min-width: 701px) and (max-width: 1000px) {
-    width: 80%;
+    // width: 80%;
   }
   @media screen and (min-width: 1001px) {
-    width: 90%;
+    // width: 90%;
   }
   height: 100%;
   // min-width: rem(550px);
@@ -190,14 +191,15 @@
     }
 
     .avatar-button--size {
-      width: rem(60px);
-      height: rem(60px);
-
+      width: rem(40px);
+      height: rem(40px);
+      margin: rem(5px);
       margin-right: rem(10px);
     }
     .user-id {
       margin-right: rem(10px);
       font-size: rem(20px);
+      word-break: keep-all;
     }
   }
 

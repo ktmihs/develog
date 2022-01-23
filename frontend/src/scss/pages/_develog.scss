@@ -50,6 +50,7 @@
 .all-posts {
   border-radius: rem(5px);
   padding: rem(20px);
+  border: 1px solid #c4c4c4;
 
   &__title {
     font-size: rem(23px);
@@ -68,10 +69,6 @@
     width: rem(300%);
     margin: rem(5%) rem(20px) 0;
   }
-}
-
-.all-posts-container {
-  border: 1px solid $gray;
 }
 
 .all-posts {

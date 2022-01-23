@@ -11,7 +11,11 @@ const searchNode = () => {
   postFunc.showSearchedPosts(
     searchTitle,
     node.querySelector('.search-posts-container'),
-    node.querySelector('.no-posts')
+    node.querySelector('.no-posts'),
+    node.querySelector('.keyword'),
+    node.querySelector('.keyword-number'),
+    node.querySelector('.posts-info'),
+    node.querySelector('.no-keyword')
   );
 
   node.querySelector('.search-container').addEventListener('click', e => {

@@ -110,14 +110,25 @@ const develogPageInitialRender = async ($populaPpostsContainer, $allPostContaine
   await getUserPosts($allPostContainer, userId, $postNum);
 };
 
-const showSearchedPosts = async (searchTitle, $postsContainer, $span) => {
+const showSearchedPosts = async (
+  searchTitle,
+  $postsContainer,
+  $span,
+  $keyword,
+  $keywordNum,
+  $postsInfo,
+  $noKeyword
+) => {
   try {
-    const { data } = await axios.get(`/search/${searchTitle}`);
+    const { data } = await axios.get(`/search?title=${searchTitle}`);
     if (data.length === 0) {
-      $span.textContent = '포스트가 없습니다.';
+      $postsInfo.classList.add('hidden');
+      $noKeyword.textContent = `"${searchTitle}" `;
+      $span.textContent = '키워드가 포함된 포스트가 없습니다.';
     } else {
+      $keyword.textContent = `"${searchTitle}" `;
+      $keywordNum.textContent = data.length;
       const addedHtml = setSearchPosts(data);
-      console.log(addedHtml);
       $postsContainer.innerHTML = addedHtml;
     }
   } catch (e) {

@@ -1,7 +1,25 @@
 @use '../utils/' as *;
 
+.posts-info {
+  text-align: center;
+  font-size: rem(25px);
+}
+
+.no-keyword {
+  text-align: center;
+  font-size: rem(25px);
+}
+
+.search-container {
+  text-align: center;
+}
+
+.search-posts-container {
+  text-align: left;
+}
+
 .no-posts {
-  display: block;
+  display: inline;
   text-align: center;
   font-size: rem(25px);
 }

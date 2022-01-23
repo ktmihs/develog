@@ -87,14 +87,15 @@ button.double-check {
   all: unset;
   cursor: pointer;
   border-radius: rem(10px);
-  width: rem(90%);
-  height: rem(30%);
+  width: rem(150%);
+  height: rem(50%);
+  font-size: rem(20px);
   text-align: center;
   background: $gray;
   color: $white;
   bottom: 0;
   left: 50%;
-  // margin-top: rem(40px);
+  margin: rem(50px) 0;
   transform: translateX(-50%);
   position: relative;
 }
